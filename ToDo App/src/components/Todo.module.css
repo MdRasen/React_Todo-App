@@ -1,0 +1,26 @@
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px;
+  cursor: pointer;
+  position: relative;
+
+  border-bottom: 1px solid #ff5945;
+  margin-bottom: 5px;
+}
+
+.btn {
+  position: absolute;
+  right: 0;
+  border: none;
+  background: none;
+  color: red;
+  padding: 5px;
+  transition: color 0.5s;
+}
+
+.btn:hover {
+  background: #ff5945;
+  color: white;
+  border-radius: 5px;
+}

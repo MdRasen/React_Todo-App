@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
-const Todos = () => {
+import Todo from "./Todo";
+
+const Todos = (Props) => {
   return (
-    <div>Todos</div>
-  )
-}
+    <div>
+      {Props.todos.map((todo) => (
+        <Todo key={todo.id} todo={todo} />
+      ))}
+    </div>
+  );
+};
 
-export default Todos
+export default Todos;
