@@ -1,11 +1,11 @@
 import React from "react";
 
 import Home from "./components/Home";
-import style from './App.module.css'
+import Style from './App.module.css'
 
 const App = () => {
   return (
-    <div className={style.container}>
+    <div className={Style.container}>
       <Home />
     </div>
   );
