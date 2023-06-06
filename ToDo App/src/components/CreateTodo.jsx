@@ -19,7 +19,6 @@ const CreateTodo = (Props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     Props.onAddToDo(todo);
-
     // Clear input field after submitting the form
     setTodo({
       desc: "",

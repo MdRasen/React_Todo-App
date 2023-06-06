@@ -13,11 +13,19 @@ const Home = () => {
       return [...prevTodos, { id: uuidv4(), todo }];
     });
   };
+  // Remove Todo
+  const handleRemoveTodo = (id) => {
+    // alert(id);
+    setTodos((prevTodos) => {
+      const filteredTodos = prevTodos.filter((todo) => todo.id != id);
+      return filteredTodos;
+    });
+  };
   return (
     <div className={Style["todo-app"]}>
       <h2>To-Do List</h2>
       <CreateTodo onAddToDo={handleTodo} />
-      <Todos todos={todos} />
+      <Todos todos={todos} onRemoveTodo={handleRemoveTodo} />
     </div>
   );
 };
